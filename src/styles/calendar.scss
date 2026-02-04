@@ -2,11 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: calc(
     #{$columns} * #{$day-size} + (#{$columns - 1}) * #{$gap} + 2 * #{$calendar-padding}
   );
   padding: $calendar-padding;
-  margin: auto;
+  margin: 0;
   gap: $gap;
 
   &__day {
@@ -25,6 +29,7 @@
     transition: all 500ms;
 
     &::before {
+      position: absolute;
       font-family: $font-family;
       font-size: $font-size-before;
     }
