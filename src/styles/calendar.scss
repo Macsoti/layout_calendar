@@ -6,7 +6,7 @@
     #{$columns} * #{$day-size} + (#{$columns - 1}) * #{$gap} + 2 * #{$calendar-padding}
   );
   padding: $calendar-padding;
-  margin: 0;
+  margin: auto;
   gap: $gap;
 
   &__day {
